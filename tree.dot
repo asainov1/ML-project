@@ -1,0 +1,33 @@
+digraph Tree {
+node [shape=box, style="filled", color="black", fontname="helvetica"] ;
+edge [fontname="helvetica"] ;
+0 [label="Na_to_K <= 14615.5\nentropy = 1.929\nsamples = 140\nvalue = [16, 11, 11, 33, 69]", fillcolor="#f6bcea"] ;
+1 [label="BP <= 0.5\nentropy = 2.035\nsamples = 75\nvalue = [16, 11, 11, 33, 4]", fillcolor="#c7c6f8"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="Age <= 50.5\nentropy = 1.163\nsamples = 28\nvalue = [16, 11, 0, 0, 1]", fillcolor="#f7dac5"] ;
+1 -> 2 ;
+3 [label="Na_to_K <= 3149.225\nentropy = 0.323\nsamples = 17\nvalue = [16, 0, 0, 0, 1]", fillcolor="#e78945"] ;
+2 -> 3 ;
+4 [label="entropy = 0.918\nsamples = 3\nvalue = [2, 0, 0, 0, 1]", fillcolor="#f2c09c"] ;
+3 -> 4 ;
+5 [label="entropy = 0.0\nsamples = 14\nvalue = [14, 0, 0, 0, 0]", fillcolor="#e58139"] ;
+3 -> 5 ;
+6 [label="entropy = 0.0\nsamples = 11\nvalue = [0, 11, 0, 0, 0]", fillcolor="#7be539"] ;
+2 -> 6 ;
+7 [label="Cholesterol <= 0.5\nentropy = 1.102\nsamples = 47\nvalue = [0.0, 0.0, 11.0, 33.0, 3.0]", fillcolor="#8886ef"] ;
+1 -> 7 ;
+8 [label="BP <= 1.5\nentropy = 1.22\nsamples = 22\nvalue = [0, 0, 11, 10, 1]", fillcolor="#eefdfa"] ;
+7 -> 8 ;
+9 [label="entropy = 0.414\nsamples = 12\nvalue = [0, 0, 11, 0, 1]", fillcolor="#4be7ca"] ;
+8 -> 9 ;
+10 [label="entropy = 0.0\nsamples = 10\nvalue = [0, 0, 0, 10, 0]", fillcolor="#3c39e5"] ;
+8 -> 10 ;
+11 [label="Na_to_K <= 3355.025\nentropy = 0.402\nsamples = 25\nvalue = [0, 0, 0, 23, 2]", fillcolor="#4d4ae7"] ;
+7 -> 11 ;
+12 [label="entropy = 0.863\nsamples = 7\nvalue = [0, 0, 0, 5, 2]", fillcolor="#8a88ef"] ;
+11 -> 12 ;
+13 [label="entropy = 0.0\nsamples = 18\nvalue = [0, 0, 0, 18, 0]", fillcolor="#3c39e5"] ;
+11 -> 13 ;
+14 [label="entropy = 0.0\nsamples = 65\nvalue = [0, 0, 0, 0, 65]", fillcolor="#e539c0"] ;
+0 -> 14 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+}
